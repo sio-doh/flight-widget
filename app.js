@@ -37,3 +37,20 @@ let flights = [
         remarks: "ON TIME"
     }
 ]
+
+function populateTable() {
+    for (const flight of flights) {
+        const tableRow = document.createElement("tr"); 
+        
+        for (const flightDetail in flight) {
+            const tableCell = document.createElement("td");
+            console.log('flightDetail', flightDetail);
+            tableCell.innerText = flight[flightDetail]; 
+            tableRow.append(tableCell);
+        }
+
+        tableBody.append(tableRow);
+    }
+}
+
+populateTable()
