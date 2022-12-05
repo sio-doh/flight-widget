@@ -37,7 +37,8 @@ header {
     border: solid 4px rgb(53, 57, 53); 
     background-color: rgb(27, 18, 18); 
     float: left; 
-    height: 40px;
+    height: 40px; 
+    min-width: 20px;
 } 
 
 #time {
